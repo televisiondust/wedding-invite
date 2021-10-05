@@ -362,7 +362,15 @@
         (function () {
             const scroll = new LocomotiveScroll({
                 e1: document.querySelector('[data-scroll-container]'),
-                smooth: true
+                smooth: true,
+                smartphone: {
+                    e1: document.querySelector('[data-scroll-container]'),
+                    smooth: true
+                },
+                tablet: {
+                    e1: document.querySelector('[data-scroll-container]'),
+                    smooth: true 
+                }
             });
         })();
 
