@@ -30,34 +30,70 @@
             background: #6C65AD;
         }
 
-        span.cls_003 {
+
+        .page {
+
+            width: 80vw;
+            height: 80vw;
+            max-width: 552px;
+            max-height: 552px;
+            margin-top: 80px;
+
+        }
+
+        .front{
+            background: url("bgs/background1.jpg");
+            background-size: contain;
+        }
+
+        .pg1 {
+            background: url("bgs/background2.jpg");
+            background-size: contain;
+        }
+
+        .pg2 {
+            background: url("bgs/background3.jpg");
+            background-size: contain;
+        }
+
+        .pg3 {
+            background: url("bgs/background4.jpg");
+            background-size: contain;
+        }
+
+        .pg4 {
+            background: url("bgs/background5.jpg");
+            background-size: contain;
+        }
+
+        
+        .pg5 {
+            background: url("bgs/background6.jpg");
+            background-size: contain;
+        }
+
+
+        .cls_003 {
             font-family: 'Shrikhand', cursive;
             font-size: 18.1px;
-            font-weight: normal;
-            text-decoration: none
+            /* font-size: 4vw; */
+
+
+
         }
 
-        div.cls_003 {
-            font-family: 'Shrikhand', cursive;
-            font-size: 18.1px;
-            font-weight: normal;
-            text-decoration: none
-        }
-
-        span.cls_004 {
+        .cls_004 {
             font-family: 'Comfortaa', cursive;
             font-size: 12.1px;
-            font-weight: normal;
-            font-style: normal;
-            text-decoration: none
+
+
         }
 
-        div.cls_004 {
+        .cls_004_ {
             font-family: 'Comfortaa', cursive;
             font-size: 12.1px;
-            font-weight: normal;
-            font-style: normal;
-            text-decoration: none
+
+
         }
 
         span.cls_002 {
@@ -142,11 +178,11 @@
             /* border-radius: 200px; */
             /* margin:20px; */
             color: #4c438f;
-            
+
         }
 
         html {
-            
+
             background-color: #090a0f;
 
         }
@@ -215,145 +251,157 @@
                 transform: translateY(-2000px);
             }
         }
-        
-        .front{
+
+        .front {
             margin-top: 20px;
         }
-           
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 800px) {
+            img {
+                height: auto;
+                width: 60vw;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <div data-scroll-container>
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div data-scroll-section class="front"
-            style="position:absolute;left:50%;margin-left:-216px;top:0px;width:432px;height:432px;overflow:hidden">
-            <div data-scroll data-scroll-speed="1.2" data-scroll-repeat= "true" data-scroll-direction="vertical" style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background1.jpg" width=432 height=432>
+
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="cont" data-scroll-container>
+        <div data-scroll-section class="front page">
+            <div data-scroll data-scroll-speed="1.2" data-scroll-repeat="true" data-scroll-direction="vertical">
+               
             </div>
         </div>
-        <div data-scroll-section class="pg1"
-            style="position:absolute;left:50%;margin-left:-216px;top:442px;width:432px;height:432px;overflow:hidden">
-            <div  data-scroll  data-scroll-speed="1.2" data-scroll-direction="vertical" style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background2.jpg" width=432 height=432>
-            </div>
-            <div data-scroll style="position:absolute;left:92.39px;top:81.00px" class="cls_003"><span
-                    class="cls_003">WE’RE GETTING
-                    MARRIED!</span></div>
-            <div data-scroll style="position:absolute;left:151.17px;top:106.09px" class="cls_004"><span
-                    class="cls_004">and you’re
-                    invited.</span></div>
-            <div data-scroll style="position:absolute;left:241.47px;top:152.55px" class="cls_002"><span
-                    class="cls_002">wow this is
-                    so</span></div>
-            <div data-scroll style="position:absolute;left:145.23px;top:153.99px" class="cls_002"><span
-                    class="cls_002">ur so
-                    right</span></div>
-            <div data-scroll style="position:absolute;left:241.47px;top:159.75px" class="cls_002"><span
-                    class="cls_002">difficult</span>
-            </div>
-            <div data-scroll style="position:absolute;left:110.32px;top:218.83px" class="cls_005"><span
-                    class="cls_005">(Congratulations
-                    most people didn't make it)</span></div>
-            <div data-scroll style="position:absolute;left:71.74px;top:244.95px" class="cls_004"><span
-                    class="cls_004">We really
+        <style>
+            .pg1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        </style>
+        <div data-scroll-section class="pg1 page">
+            <div class="content" data-scroll data-scroll-speed="-1"
+                style=" text-align: center; width: 100%; height: 100%;">
+                <div class="cls_003" style="position: absolute;top: 19%;text-align: center; width: 100%;">WE’RE GETTING
+                    MARRIED!</div>
+                <div class="cls_004_" style="position: absolute;top: 25%;text-align: center; width: 100%;">and you’re
+                    invited.</div>
+                <div class="cls_002" style="position: absolute;top: 40%; right: 30%; text-align: left;">wow this is so
+                    <br />difficult
+                </div>
+                <div class="cls_002" style="position: absolute;top: 40%; left: 30%; text-align: left;">ur so
+                    right</div>
+
+                <div class="cls_005" style="position: absolute;bottom: 45%;text-align: center; width: 100%;">
+                    (Congratulations
+                    most people didn't make it)</div>
+                <div class="cls_004" style="position: absolute;bottom: 35%;text-align: center; width: 100%;">We really
                     really
-                    want you to be there, so here's</span></div>
-            <div data-scroll style="position:absolute;left:95.68px;top:259.35px" class="cls_004"><span
-                    class="cls_004">some
+                    want you to be there, so here's <br />some
                     instructions
-                    on how to be there:</span></div>
-        </div>
-        <div data-scroll-section class="pg2"
-            style="position:absolute;left:50%;margin-left:-216px;top:884px;width:432px;height:432px;overflow:hidden">
-            <div data-scroll data-scroll-speed="1.2" data-scroll-direction="vertical"
-                style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background3.jpg" width=432 height=432>
+                    on how to be there:</div>
+
             </div>
-            <div data-scroll>
-                <div style="position:absolute;left:61.21px;top:110.86px" class="cls_007"><span class="cls_007">The
-                        Muhurtam:</span></div>
-                <div style="position:absolute;left:63.84px;top:129.26px" class="cls_006"><span class="cls_006">9am, 10th
-                        November 2021</span></div>
-                <div style="position:absolute;left:64.20px;top:145.37px" class="cls_004"><span class="cls_004">Where:
+        </div>
+
+        <div data-scroll-section class="pg2 page">
+            <div data-scroll data-scroll-speed="1" class="content" style="width: 100%; height: 100%;">
+                <div style=" position: absolute;top: 25%; left: 18%;">
+                    <div class="cls_007">The
+                        Muhurtam:</div>
+                    <div class="cls_006">9am, 10th
+                        November 2021</div>
+                    <div class="cls_004">Where:
                         Blooms
-                        Wayanad</span></div>
-                <div style="position:absolute;left:64.22px;top:157.60px" class="cls_004"><span class="cls_004">Dress
+                        Wayanad</div>
+                    <div class="cls_004">Dress
                         Code:
-                        Indian Traditional</span></div>
-                <div style="position:absolute;left:110.16px;top:327.77px" class="cls_004"><span class="cls_004">This is
-                        followed
-                        by </span><span class="cls_006">lunch </span><span class="cls_004">at Blooms</span></div>
-                <div style="position:absolute;left:110.16px;top:342.17px" class="cls_004"><span class="cls_004">Wayanad,
-                    </span><span class="cls_006">11am</span><span class="cls_004"> onwards.</span></div>
+                        Indian Traditional</div>
+
+                </div>
+                <div class="cls_004" style="position: absolute; bottom: 15%;left: 18%;">This is
+                    followed
+                    by <span class="cls_006">lunch </span><span class="cls_004">at Blooms</span>
+                    <div class="cls_004"><span class="cls_004">Wayanad,
+                        </span><span class="cls_006">11am</span><span class="cls_004"> onwards.</span></div>
+                </div>
+
             </div>
         </div>
-        <div data-scroll-section class="pg3"
-            style="position:absolute;left:50%;margin-left:-216px;top:1326px;width:432px;height:432px;overflow:hidden">
-            <div  data-scroll data-scroll-speed="1.2" data-scroll-direction="vertical" style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background4.jpg" width=432 height=432>
+
+        <div data-scroll-section class="pg3 page">
+            <div data-scroll class="content" data-scroll-speed="-1" style="width: 100%; height: 100%;">
+                <div style="position: absolute;top:25%;left: 18%;">
+                    <div class="cls_007"><span class="cls_007">The Bonus
+                            Wedding
+                            thing // Reception:</span></div>
+                    <div class="cls_006"><span class="cls_006">5pm, 10th
+                            November 2021</span></div>
+                    <div class="cls_004"><span class="cls_004">Where: Blooms
+                            Wayanad</span></div>
+                    <div class="cls_004">Dress Code:
+                        Indian Traditional/ Western </div>
+                    <div class="cls_004" style="padding-left: 28%;"> Semi-formal/A
+                        onesie of your <br />favourite
+                        Pokemon<br />(jk.)(unless...?)</div>
+                </div>
+                <div style="position: absolute;bottom: 40%;text-align: center; width: 100%;" class="cls_004"><span
+                        class="cls_004">followed by
+                        some
+                    </span><span class="cls_006">song, dance </span><span class="cls_004">and </span><span
+                        class="cls_006">dinner.</span></div>
             </div>
-            <div style="position:absolute;left:62.84px;top:102.06px" class="cls_007"><span class="cls_007">The Bonus
-                    Wedding
-                    thing // Reception:</span></div>
-            <div style="position:absolute;left:64.02px;top:122.87px" class="cls_006"><span class="cls_006">5pm, 10th
-                    November 2021</span></div>
-            <div style="position:absolute;left:63.77px;top:138.97px" class="cls_004"><span class="cls_004">Where: Blooms
-                    Wayanad</span></div>
-            <div style="position:absolute;left:64.43px;top:154.33px" class="cls_004"><span class="cls_004">Dress Code:
-                    Indian Traditional/ Western</span></div>
-            <div style="position:absolute;left:137.08px;top:169.69px" class="cls_004"><span
-                    class="cls_004">Semi-formal/A
-                    onesie of your</span></div>
-            <div style="position:absolute;left:137.08px;top:184.10px" class="cls_004"><span class="cls_004">favourite
-                    Pokemon</span></div>
-            <div style="position:absolute;left:137.08px;top:198.50px" class="cls_004"><span
-                    class="cls_004">(jk.)(unless...?)</span></div>
-            <div style="position:absolute;left:63.19px;top:239.53px" class="cls_004"><span class="cls_004">followed by
-                    some
-                </span><span class="cls_006">song, dance </span><span class="cls_004">and </span><span
-                    class="cls_006">dinner.</span></div>
         </div>
-        <div data-scroll-section class="pg4"
-            style="position:absolute;left:50%;margin-left:-216px;top:1768px;width:432px;height:432px;overflow:hidden">
-            <div  data-scroll data-scroll-speed="1.2" data-scroll-direction="vertical" style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background5.jpg" width=432 height=432>
+
+        <div data-scroll-section class="pg4 page">
+            <div data-scroll data-scroll-speed="1" class="content" style="width: 100%; height: 100%;">
+
+                <div style="position:absolute; top:40%; text-align: center;width: 100%;">
+
+                    <div class="cls_008"><span class="cls_008">Heads
+                            Up:</span>
+                    </div>
+                    <ul style="text-align: left; padding-left: 25%;">
+                        <li class="cls_004">it gets
+                            pretty
+                        </span><span class="cls_006">chilly</span><span class="cls_004">, you'll want layers,
+                           <br> warmer clothes</span></li>
+
+                           <li class="cls_004">you're going
+                            to
+                            be in nature, so are the </span><span class="cls_006">bugs</span><span
+                            class="cls_004">.</span> <br>Bring your
+                            choice
+                            of protection</li>
+
+                            <li class="cls_004">wear comfy
+                                shoes, bring shoes you don't mind <br> getting a
+                                little <span class="cls_006">mucky</span></li>
+                            <li class="cls_004">don't get
+                                abducted by the 4ft tall blue people <br> you may or
+                                may
+                                not see.</li>
+                    </ul>
+                    
+                </div>
             </div>
-            <div style="position:absolute;left:175.31px;top:152.44px" class="cls_008"><span class="cls_008">Heads
-                    Up:</span>
-            </div>
-            <div style="position:absolute;left:69.21px;top:181.69px" class="cls_004"><span class="cls_004">-it gets
-                    pretty
-                </span><span class="cls_006">chilly</span><span class="cls_004">, you'll want layers, warmer</span>
-            </div>
-            <div style="position:absolute;left:69.21px;top:196.09px" class="cls_004"><span
-                    class="cls_004">clothes</span>
-            </div>
-            <div style="position:absolute;left:69.21px;top:224.90px" class="cls_004"><span class="cls_004">-you're going
-                    to
-                    be in nature, so are the </span><span class="cls_006">bugs</span><span class="cls_004">.</span>
-            </div>
-            <div style="position:absolute;left:69.21px;top:239.30px" class="cls_004"><span class="cls_004">Bring your
-                    choice
-                    of protection</span></div>
-            <div style="position:absolute;left:69.21px;top:268.10px" class="cls_004"><span class="cls_004">-wear comfy
-                    shoes, bring shoes you don't mind</span></div>
-            <div style="position:absolute;left:69.21px;top:282.50px" class="cls_004"><span class="cls_004">getting a
-                    little
-                </span><span class="cls_006">mucky</span><span class="cls_004">.</span></div>
-            <div style="position:absolute;left:69.21px;top:311.30px" class="cls_004"><span class="cls_004">-don't get
-                    abducted by the 4ft tall blue people</span></div>
-            <div style="position:absolute;left:69.21px;top:325.70px" class="cls_004"><span class="cls_004">you may or
-                    may
-                    not see.</span></div>
         </div>
-        <div data-scroll-section class="pg5"
-            style="position:absolute;left:50%;margin-left:-216px;top:2210px;width:432px;height:432px;overflow:hidden">
-            <div  data-scroll data-scroll-speed="1.2" data-scroll-direction="vertical" style="position:absolute;left:0px;top:0px">
-                <img src="bgs/background6.jpg" width=432 height=432>
+        <div data-scroll-section class="pg5 page">
+            <div data-scroll data-scroll-speed="1.2" data-scroll-direction="vertical">
+                
             </div>
         </div>
     </div>
@@ -363,11 +411,11 @@
             const scroll = new LocomotiveScroll({
                 e1: document.querySelector('[data-scroll-container]'),
                 smooth: true,
-                smartphone: {  
+                smartphone: {
                     smooth: true
                 },
-                tablet: { 
-                    smooth: true 
+                tablet: {
+                    smooth: true
                 }
             });
         })();
