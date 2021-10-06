@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="res/locomotive-scroll.css">
+    <!-- <link rel="stylesheet" href="res/locomotive-scroll.css"> -->
     <title>Television Dust wedding</title>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Shrikhand&display=swap');
@@ -29,13 +29,15 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #6C65AD;
         }
-
+        .content{
+            position: relative;
+        }
 
         .page {
 
-            width: 80vw;
-            height: 80vw;
-            font-size: 3vw;
+            width: 80vh;
+            height: 80vh;
+            font-size: 3vh;
             /* max-width: 552px;
             max-height: 552px; */
             margin-top: 80px;
@@ -235,10 +237,10 @@
             align-items: center;
         }
 
-        @media only screen and (max-width: 800px) {
-            img {
-                height: auto;
-                width: 60vw;
+        @media only screen and (min-width: 800px) {
+            .page {
+                /* height: auto;
+                width: 60vw; */
             }
         }
     </style>
@@ -250,11 +252,9 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
-    <div class="cont" data-scroll-container>
-        <div data-scroll-section class="front page">
-            <div data-scroll data-scroll-speed="1.2" data-scroll-repeat="true" data-scroll-direction="vertical">
-               
-            </div>
+    <div class="cont" >
+        <div  class="front page">
+            <div></div>
         </div>
         <style>
             .pg1 {
@@ -264,8 +264,8 @@
 
             }
         </style>
-        <div data-scroll-section class="pg1 page">
-            <div class="content" data-scroll data-scroll-speed="-1"
+        <div class="pg1 page">
+            <div class="content" 
                 style=" text-align: center; width: 100%; height: 100%;">
                 <div class="cls_003" style="position: absolute;top: 19%;text-align: center; width: 100%;">WE’RE GETTING
                     MARRIED!</div>
@@ -377,7 +377,7 @@
             </div>
         </div>
     </div>
-    <script src="res/locomotive-scroll.min.js"></script>
+    <!-- <script src="res/locomotive-scroll.min.js"></script>
     <script>
         (function () {
             const scroll = new LocomotiveScroll({
@@ -392,7 +392,7 @@
             });
         })();
 
-    </script>
+    </script> -->
 </body>
 
 </html>
